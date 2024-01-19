@@ -1,4 +1,4 @@
-import Logo from '@/client/components/elements/logo';
+import Logo from '@/client/shared/components/elements/logo';
 import { HeaderNav } from '../data';
 
 function NavLink() {
