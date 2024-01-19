@@ -1,12 +1,13 @@
 import type { Config } from 'tailwindcss';
 
-const config = {
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './client/**/*.{js,ts,jsx,tsx}',
   ],
   prefix: '',
   theme: {
@@ -18,15 +19,12 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        mont: ['var(--font-mont)'],
+      },
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+        yellow: {
+          700: '#FF9900',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -74,7 +72,8 @@ const config = {
       },
     },
   },
+  // eslint-disable-next-line global-require
   plugins: [require('tailwindcss-animate')],
-} satisfies Config;
+};
 
 export default config;
