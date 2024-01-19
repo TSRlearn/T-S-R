@@ -7,6 +7,6 @@
 
 @layer utilities {
   .h1-64 {
-    @apply font-normal text-[64px] leading-[75px] text-[]
+    @apply font-normal text-[64px] leading-[75px] text-[];
   }
 }
