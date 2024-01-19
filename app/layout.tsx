@@ -1,8 +1,7 @@
+import React from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import './styles/globals.css';
+import { Mont, plusJakarta } from './font';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -11,12 +10,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={`${plusJakarta.className} ${Mont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
