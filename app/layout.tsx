@@ -1,7 +1,8 @@
-import React from 'react';
 import type { Metadata } from 'next';
-import './styles/globals.css';
+import React from 'react';
+
 import { Mont, plusJakarta } from './font';
+import './styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

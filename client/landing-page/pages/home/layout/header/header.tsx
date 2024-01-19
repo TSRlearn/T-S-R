@@ -1,5 +1,6 @@
-import Logo from '@/client/shared/components/elements/logo';
-import { HeaderNav } from '../data';
+import Logo from '@shared/components/elements/logo';
+
+import { HeaderNav } from '../../data';
 
 function NavLink() {
   return (
@@ -15,7 +16,7 @@ function NavLink() {
   );
 }
 
-function Header() {
+export function Header() {
   return (
     <header>
       <Logo src='/icons/tsr-logo.svg' />
@@ -24,5 +25,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

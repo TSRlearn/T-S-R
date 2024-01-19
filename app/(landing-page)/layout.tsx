@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
 
-import { Header } from '@landing-page/pages/home/layout/header';
+import Footer from '@landing-page/shared/layout/footer';
 
 function Layout({ children }: { children: ReactNode }) {
   return (
-    <div>
-      <Header />
+    <>
       {children}
-    </div>
+      <Footer />
+    </>
   );
 }
 
