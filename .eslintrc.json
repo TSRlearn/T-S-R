@@ -34,7 +34,6 @@
         "no-continue": "off",
         "consistent-return": "off",
         "prefer-arrow-callback": 2,
-        "operator-linebreak": "off",
         "no-confusing-arrow": "off",
         "no-underscore-dangle": "off",
         "object-curly-newline": "off",
@@ -42,6 +41,10 @@
         "no-prototype-builtins": "off",
         "function-paren-newline": "off",
         "newline-per-chained-call": "off",
+        "jsx-quotes": ["error", "prefer-single"],
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "react/jsx-no-bind": "off",
+        "operator-linebreak": "off",
         "padding-line-between-statements": [
           "error",
           {
@@ -81,18 +84,6 @@
         "react/jsx-props-no-spreading": "off",
         "react/jsx-curly-brace-presence": "error",
         "react/jsx-one-expression-per-line": "off",
-        "react/jsx-wrap-multilines": [
-          "error",
-          {
-            "declaration": "parens-new-line",
-            "assignment": "parens-new-line",
-            "return": "parens-new-line",
-            "arrow": "parens-new-line",
-            "condition": "parens-new-line",
-            "logical": "parens-new-line",
-            "prop": "ignore"
-          }
-        ],
         "react/jsx-sort-props": [
           2,
           {
@@ -113,12 +104,6 @@
         "unicorn/prefer-array-index-of": "off",
         "unicorn/no-array-callback-reference": "off",
         "unicorn/no-object-as-default-parameter": "off",
-        "unicorn/filename-case": [
-          "error",
-          {
-            "case": "kebabCase"
-          }
-        ],
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/no-shadow": "off",
         "@typescript-eslint/comma-dangle": "off",
@@ -131,33 +116,9 @@
             "next": "*"
           }
         ],
-        "@typescript-eslint/naming-convention": [
-          "error",
-          {
-            "selector": "interface",
-            "format": ["PascalCase"],
-            "custom": {
-              "regex": "^[A-Z]",
-              "match": true
-            }
-          },
-          {
-            "selector": "enum",
-            "format": ["PascalCase"],
-            "custom": {
-              "regex": "^[A-Z]",
-              "match": true
-            }
-          }
-        ],
         "sort-destructure-keys/sort-destructure-keys": [
           2,
           { "caseSensitive": false }
-        ],
-        "folders/match-regex": [
-          2,
-          "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
-          "${process.cwd()}/"
         ],
         "unused-imports/no-unused-imports": "error"
       }

@@ -12,7 +12,5 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false,
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true,
-  "importOrderGroupNamespaceSpecifiers": true
+  "importOrderSeparation": true
 }
