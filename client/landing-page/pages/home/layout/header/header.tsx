@@ -9,15 +9,16 @@ import { cn } from '@shared/lib/utils';
 
 import Container from '@landing-page/shared/layout/container';
 
-import { HeaderNav } from '../../data';
+import { HeaderNav, HeaderNavProp } from '../../data';
 
-function NavLink() {
+function NavLink({ navlink }: { navlink: HeaderNavProp[] }) {
   const pathname = usePathname();
+  const getNavLink = navlink || [];
 
   return (
     <nav>
       <ul className='hidden items-center gap-10 md:flex'>
-        {HeaderNav.map(({ label, route }) => {
+        {getNavLink.map(({ label, route }) => {
           const isActive =
             (pathname.includes(route) && route.length > 1) ||
             pathname === route;
@@ -45,10 +46,10 @@ function NavLink() {
 
 export function Header() {
   return (
-    <Container className='flex items-center justify-between py-6'>
+    <Container className='flex items-center justify-between py-6 relative z-10'>
       <div className='flex items-center gap-10'>
         <Logo src='/icons/tsr-logo.svg' />
-        <NavLink />
+        <NavLink navlink={HeaderNav} />
       </div>
 
       <Button size='sm' variant='orange'>

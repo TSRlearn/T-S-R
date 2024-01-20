@@ -24,7 +24,7 @@ function Container<C extends React.ElementType = 'div'>({
   return (
     <Component
       {...otherProps}
-      className={cn('max-w-[1200px] mx-auto px-6', className)}
+      className={cn('max-w-[1150px] mx-auto px-6', className)}
     >
       {children}
     </Component>

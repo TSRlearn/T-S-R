@@ -28,6 +28,7 @@ const config: Config = {
           800: '#B46100',
         },
         blue: {
+          100: '#EBF4FF',
           700: '#1152A2',
         },
         dark: {
