@@ -3,15 +3,15 @@ import React, { ReactNode } from 'react';
 import { cn } from '@shared/lib/utils';
 
 const Variants = {
-  primary: 'bg-primary text-white',
-  yellow: 'bg-yellow-700 text-white shadow-sm',
+  primary: 'btn-primary text-white',
+  orange: 'bg-orange-700 text-white shadow-sm',
   black: 'bg-black text-white hover:bg-primary transition',
   success: 'bg-green-600 gray-50',
 };
 
 const sizes = {
   sm: 'px-7 py-3 rounded-[100px]',
-  md: 'px-7 py-2 font-medium w-fit',
+  md: 'px-7 py-3 font-medium w-fit',
   lg: 'px-9 py-2 font-medium',
   full: 'w-full py-2 font-medium',
 };
@@ -33,7 +33,7 @@ function Button({
   return (
     <button
       className={cn(
-        'disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none',
+        'disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none font-mont',
         Variants[variant],
         sizes[size],
         className,

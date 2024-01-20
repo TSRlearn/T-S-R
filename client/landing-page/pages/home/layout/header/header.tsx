@@ -51,7 +51,7 @@ export function Header() {
         <NavLink />
       </div>
 
-      <Button size='sm' variant='yellow'>
+      <Button size='sm' variant='orange'>
         Enrol Now
       </Button>
     </Container>

@@ -23,16 +23,15 @@ const config: Config = {
         mont: ['var(--font-mont)'],
       },
       colors: {
-        yellow: {
+        orange: {
           700: '#FF9900',
           800: '#B46100',
         },
         blue: {
           700: '#1152A2',
         },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+        dark: {
+          900: '#002124',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
