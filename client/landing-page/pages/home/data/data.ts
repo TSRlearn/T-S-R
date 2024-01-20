@@ -3,18 +3,18 @@ import { HeaderNavProp } from './index.d';
 export const HeaderNav: HeaderNavProp[] = [
   {
     label: 'Home',
-    link: '/',
+    route: '/',
   },
   {
     label: 'Courses',
-    link: '',
+    route: '',
   },
   {
     label: 'FAQs',
-    link: '/FAQ',
+    route: '/FAQ',
   },
   {
     label: 'About Us',
-    link: '/about',
+    route: '/about',
   },
 ];

@@ -25,6 +25,10 @@ const config: Config = {
       colors: {
         yellow: {
           700: '#FF9900',
+          800: '#B46100',
+        },
+        blue: {
+          700: '#1152A2',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -69,6 +73,9 @@ const config: Config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      boxShadow: {
+        sm: '1px 1px 1px 0 #B46100',
       },
     },
   },
