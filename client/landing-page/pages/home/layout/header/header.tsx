@@ -16,7 +16,7 @@ function NavLink() {
 
   return (
     <nav>
-      <ul className='flex items-center gap-10'>
+      <ul className='hidden items-center gap-10 md:flex'>
         {HeaderNav.map(({ label, route }) => {
           const isActive =
             (pathname.includes(route) && route.length > 1) ||
