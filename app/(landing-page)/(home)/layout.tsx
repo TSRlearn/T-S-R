@@ -8,7 +8,7 @@ function Layout({ children }: { children: ReactNode }) {
     <main>
       <Container
         as='div'
-        className='relative min-h-[109dvh] bg-blue-100'
+        className='relative min-h-[118dvh] bg-blue-100'
         variant='outer'
       >
         <Header />

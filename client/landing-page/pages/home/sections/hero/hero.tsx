@@ -18,7 +18,7 @@ const CardItem = [
     title: 'Fundamentals of Cyber Security',
     src: 'cyber.png',
     rotate: 'rotate(6deg)',
-    left: '40px',
+    left: '30px',
   },
 ];
 
@@ -57,7 +57,7 @@ function Card({
   );
 }
 
-function RightSide({
+function HeroImageWrapper({
   isShow,
   setIsShow,
 }: {
@@ -69,7 +69,7 @@ function RightSide({
       <div className='relative'>
         <Image
           alt='A student smiling'
-          className='hero-image w-full md:h-[600px]  md:max-w-[500px] md:rounded-r-[40px]'
+          className='hero-image w-full md:h-[650px]  md:w-[500px] md:rounded-r-[40px]'
           height={500}
           src='/images/hero.webp'
           width={550}
@@ -77,7 +77,7 @@ function RightSide({
         />
 
         {isShow && (
-          <ul className='absolute grid gap-4 max-md:bottom-0 md:left-0 md:top-[60%] md:-translate-x-1/2'>
+          <ul className='md:-translate-x- absolute grid gap-4 max-md:bottom-0 md:-left-32 md:top-[60%]'>
             {CardItem.map((item) => (
               <li key={item.title}>
                 <Card {...item} />
@@ -139,7 +139,7 @@ export function Hero() {
           width={700}
         />
 
-        <RightSide isShow={isShow} setIsShow={setIsShow} />
+        <HeroImageWrapper isShow={isShow} setIsShow={setIsShow} />
       </Container>
     </section>
   );
