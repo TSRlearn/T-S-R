@@ -76,6 +76,7 @@ const config: Config = {
       },
       boxShadow: {
         sm: '1px 1px 1px 0 #B46100',
+        md: '0 0px 10px 0 rgba(0, 29, 64, 0.1)',
       },
     },
   },
