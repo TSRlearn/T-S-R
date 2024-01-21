@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import Button from '@shared/components/elements/button';
+import { Button } from '@shared';
 
-import Container from '@landing-page/shared/layout/container';
+import { Container } from '@landing-page/shared';
 
 export function Hero() {
   return (
@@ -15,7 +15,7 @@ export function Hero() {
             <br /> Accessible <br />{' '}
             <span className='text-dark-900'>Tech Education</span>
           </h1>
-          <p className='mb-5 mt-3 max-w-[20rem]'>
+          <p className='hero-description mb-5 mt-3 md:max-w-[26rem]'>
             Gain in-demand skills with TSR Learning, evolving from
             novice to industry-ready expert, no degree or prior tech
             experience required.
@@ -36,8 +36,16 @@ export function Hero() {
         </div>
 
         <Image
-          alt='a student smiling'
-          className='right-0 top-0 max-md:w-[400px] md:absolute md:h-[600px]'
+          alt='Grid'
+          className='absolute left-1/2 top-1/2 h-full w-[80%] -translate-x-1/2 -translate-y-1/2'
+          height={500}
+          src='/images/hero-grid.png'
+          width={700}
+        />
+
+        <Image
+          alt='A student smiling'
+          className='hero-image right-0 top-0 w-full  rounded-r-[40px] md:absolute md:h-[600px] md:max-w-[500px]'
           height={500}
           src='/images/hero.webp'
           width={550}

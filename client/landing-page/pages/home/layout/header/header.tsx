@@ -3,11 +3,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import Button from '@shared/components/elements/button';
-import Logo from '@shared/components/elements/logo';
-import { cn } from '@shared/lib/utils';
+import { Button, Logo, cn } from '@shared';
 
-import Container from '@landing-page/shared/layout/container';
+import { Container } from '@landing-page/shared';
 
 import { HeaderNav, HeaderNavProp } from '../../data';
 
@@ -46,7 +44,10 @@ function NavLink({ navlink }: { navlink: HeaderNavProp[] }) {
 
 export function Header() {
   return (
-    <Container className='flex items-center justify-between py-6 relative z-10'>
+    <Container
+      as='header'
+      className='relative z-10 flex items-center justify-between py-6'
+    >
       <div className='flex items-center gap-10'>
         <Logo src='/icons/tsr-logo.svg' />
         <NavLink navlink={HeaderNav} />

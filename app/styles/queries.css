@@ -1,0 +1,9 @@
+@media (min-width: 640px) and (max-width: 940px) {
+  .hero-image {
+    max-width: 400px!important;
+  }
+  
+  .hero-description {
+    max-width: 20rem!important;
+  }
+}

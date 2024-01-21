@@ -23,7 +23,7 @@ type ButtonType = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: keyof typeof Variants;
 };
 
-function Button({
+export function Button({
   children = null,
   className = '',
   size = 'md',
@@ -45,5 +45,3 @@ function Button({
     </button>
   );
 }
-
-export default Button;

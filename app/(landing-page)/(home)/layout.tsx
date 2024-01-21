@@ -1,15 +1,19 @@
 import { ReactNode } from 'react';
 
-import { Header } from '@landing-page/pages/home/layout/header';
-import { Hero } from '@landing-page/pages/home/sections/hero';
+import { Header, Hero } from '@landing-page/pages/home';
+import { Container } from '@landing-page/shared';
 
 function Layout({ children }: { children: ReactNode }) {
   return (
     <main>
-      <div className='relative min-h-[110dvh] bg-blue-100'>
+      <Container
+        as='div'
+        className='relative min-h-[109dvh] bg-blue-100'
+        variant='outer'
+      >
         <Header />
         <Hero />
-      </div>
+      </Container>
 
       {children}
     </main>
