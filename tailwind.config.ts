@@ -34,6 +34,10 @@ const config: Config = {
         dark: {
           900: '#002124',
         },
+        gray: {
+          100: '#f9f9f9',
+          200: '#efefef',
+        },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',

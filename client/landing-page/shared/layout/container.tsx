@@ -3,8 +3,8 @@ import React from 'react';
 import { cn } from '@shared/lib/utils';
 
 const variants = {
-  outer: 'max-w-[1220px] my-4 rounded-[40px]',
-  inner: 'max-w-[1150px]',
+  outer: 'max-w-[1220px] my-4 rounded-[40px] mx-4 px-4',
+  inner: 'max-w-[1150px] md:px-6',
 };
 
 interface Props<C extends React.ElementType> {
@@ -32,9 +32,9 @@ export function Container<C extends React.ElementType = 'div'>({
     <Component
       {...otherProps}
       className={cn(
-        'max-w-[1150px] mx-auto px-6',
-        className,
+        'max-w-[1150px] mx-auto',
         variants[variant],
+        className,
       )}
     >
       {children}

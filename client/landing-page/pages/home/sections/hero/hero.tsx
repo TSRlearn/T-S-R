@@ -28,20 +28,23 @@ function Card({
   rotate,
   src,
   title,
+  zIdx,
 }: {
   left: string;
   radius?: string;
   rotate: string;
   src: string;
   title: string;
+  zIdx?: boolean;
 }) {
   return (
     <div
-      className='grid max-w-80 grid-cols-[70px_1fr] items-center gap-1 bg-white p-3 shadow-md'
+      className='relative grid max-w-80 grid-cols-[70px_1fr] items-center gap-1 bg-white p-3 shadow-md'
       style={{
         transform: rotate,
         borderRadius: radius,
         marginLeft: left,
+        zIndex: zIdx ? 1 : 0,
       }}
     >
       <Image
@@ -77,10 +80,10 @@ function HeroImageWrapper({
         />
 
         {isShow && (
-          <ul className='md:-translate-x- absolute grid gap-4 max-md:bottom-0 md:-left-32 md:top-[60%]'>
-            {CardItem.map((item) => (
+          <ul className='absolute grid gap-6 max-md:bottom-0 md:-left-32 md:top-[60%]'>
+            {CardItem.map((item, idx) => (
               <li key={item.title}>
-                <Card {...item} />
+                <Card {...item} zIdx={idx % 2 === 0} />
               </li>
             ))}
           </ul>
@@ -96,14 +99,14 @@ export function Hero() {
   return (
     <section>
       <Container className='items-center justify-between md:flex'>
-        <div className='pt-10'>
+        <div className='relative mb-10 pt-10 max-md:px-4 max-md:text-center'>
           <h1 className='font-mont text-4xl font-normal text-orange-700 lg:text-6xl'>
             Unlock Your <br /> Potential{' '}
             <span className='text-dark-900'>with</span>
             <br /> Accessible{' '}
             <Image
               alt='line pointing to available courses'
-              className='inline-block'
+              className='!max-md:h-[60px] bottom-0 right-5 inline-block max-md:absolute max-md:w-[130px] max-md:rotate-[90deg]'
               height={90}
               src='/icons/line.svg'
               width={170}
@@ -118,7 +121,7 @@ export function Hero() {
           </p>
 
           <Button
-            className='flex gap-2 rounded-[41px] font-normal'
+            className='relative z-30 flex justify-center gap-2 rounded-[41px] font-normal max-md:w-full'
             size='md'
           >
             Discover Courses{' '}

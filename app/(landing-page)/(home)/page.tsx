@@ -1,5 +1,7 @@
+import { Cohort } from '@landing-page/pages/home';
+
 function Home() {
-  return <div>Home</div>;
+  return <Cohort />;
 }
 
 export default Home;

@@ -10,6 +10,7 @@ build
 coverage
 node_modules
 scripts/node
+server
 
 .eslintrc.js
 next.config.js
