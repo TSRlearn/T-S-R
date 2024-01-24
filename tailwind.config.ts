@@ -37,6 +37,7 @@ const config: Config = {
         gray: {
           100: '#f9f9f9',
           200: '#efefef',
+          300: '#C1C7D0',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',

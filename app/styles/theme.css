@@ -12,19 +12,19 @@
   }
 
   .bg {
-    background: url('/under-image.png'),
+    background: url('/images/under-image.png'),
     linear-gradient(to right, #024ba5, #105dbd);
     background-position: center;
     background-size: cover;
     height: 100dvh;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     position: relative;
   }
 
   .bg::before {
     content: '';
-    background-image: url('/cohort-grid.png');
+    background-image: url('/images/cohort-grid.png');
     width: 100%;
     height: 100%;
     position: absolute;
@@ -32,5 +32,9 @@
     left: 50%;
     z-index: 5;
     transform: translate(-50%, -50%);
+  }
+
+  .disabled-btn {
+    @apply cursor-not-allowed bg-gray-500 text-white;
   }
 }

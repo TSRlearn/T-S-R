@@ -12,7 +12,7 @@ const Variants = {
 const sizes = {
   sm: 'px-7 py-3 rounded-[100px]',
   md: 'px-7 py-3 font-medium w-fit',
-  lg: 'px-9 py-2 font-medium',
+  lg: 'px-16 py-2 font-medium rounded-[100px]',
   full: 'w-full py-2 font-medium',
 };
 
