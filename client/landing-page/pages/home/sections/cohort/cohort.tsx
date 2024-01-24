@@ -1,4 +1,4 @@
-import { Button } from '@shared/index';
+import { Button, StopTimer } from '@shared';
 
 import { Container } from '@landing-page/shared';
 
@@ -18,21 +18,23 @@ export function Cohort() {
           ✦ COHORT II
         </button>
 
-        <h1 className='mx-auto font-mont md:max-w-[900px] lg:text-[80px] lg:leading-[75px]'>
+        <h1 className='mx-auto font-mont text-4xl md:max-w-[900px] lg:text-[80px] lg:leading-[75px]'>
           Become an Industry-Ready{' '}
           <span className='text-orange-700'>DevOps</span> Expert
         </h1>
-        <p className='mx-auto mt-4 max-w-[700px] text-lg'>
+        <p className='mx-auto mt-4 max-w-[700px] md:text-lg'>
           Dive into the dynamic world of cybersecurity with TSR
           Learning. Whether you&apos;re starting out or scaling up,
           our course is crafted to turn you into a skilled
           professional, ready to tackle today&apos;s cyber challenges.
         </p>
 
-        <div className='mt-10'>
+        <div className='mx-auto mt-10 flex items-center justify-center gap-4 max-md:flex-col md:gap-10'>
           <Button className='text-lg' size='lg' variant='orange'>
             Join Cohort II
           </Button>
+
+          <StopTimer />
         </div>
       </Container>
     </Container>
